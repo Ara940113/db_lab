@@ -1,0 +1,17 @@
+package site.metacoding.chatting.v4.client;
+
+import javax.swing.JFrame;
+
+public class ChatClientProgram extends JFrame {
+
+	public ChatClientProgram() {
+		setSize(250, 300);
+
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new ChatClientProgram();
+	}
+
+}

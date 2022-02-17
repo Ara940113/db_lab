@@ -1,0 +1,15 @@
+package site.metacoding.chatting.v4;
+
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame {
+	public MyFrame() {
+		setSize(600, 400);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public MyFrame(int w, int h) {
+		setSize(w, h);
+	}
+}

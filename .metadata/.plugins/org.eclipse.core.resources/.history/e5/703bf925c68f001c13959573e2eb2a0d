@@ -1,0 +1,53 @@
+package site.metacoding.chatting.v4;
+
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class MyFrame extends JFrame {
+
+	JPanel myJPanel;
+	JButton btn1, btn2;
+	JCheckBox checkBox;
+	JLabel labelText, labelImg;
+
+	public MyFrame() {
+		initSetting();
+
+		initObject();
+
+		iniListner();
+
+		setVisible(true);
+	}
+
+	private void initSetting() {
+		setSize(300, 300);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+	private void initObject() {
+		myJPanel = new JPanel();
+		btn1 = new JButton("버튼1");
+		btn2 = new JButton("버튼2");
+		checkBox = new JCheckBox();
+		labelText = new JLabel("레이블1");
+	}
+
+	private void iniListner() {
+		add(myJPanel);
+		myJPanel.add(btn1);
+		myJPanel.add(btn2);
+		myJPanel.add(checkBox);
+		myJPanel.add(labelText);
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

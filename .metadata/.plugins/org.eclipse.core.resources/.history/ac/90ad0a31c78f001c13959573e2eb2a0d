@@ -1,0 +1,7 @@
+package site.metacoding.chatting.v4.frame;
+
+public class BorderLayout extends MyFrame{
+public BorderLayout() {
+	// TODO Auto-generated constructor stub
+}
+}
