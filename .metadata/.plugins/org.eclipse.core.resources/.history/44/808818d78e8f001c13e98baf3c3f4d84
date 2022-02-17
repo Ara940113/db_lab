@@ -1,0 +1,21 @@
+package site.metacoding.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBEx01 {
+
+    public static void main(String[] args) {
+        try {
+            // 1. connection 연결 (세션생성) port, ip, id, password, protocal
+            Connection conn = DriverManager.getConnection
+                      ("jdbc:oracle:thin:@localhost:1521:xe", "SCOTT", "TIGER");
+            System.out.println("DB연결완료");
+            //2. 버퍼 달아서 통신 (ALL:SELECT * FROM emp)
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}
